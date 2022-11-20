@@ -1,12 +1,23 @@
- .we-do{
-     padding-top: 0;
- }
+.we-do{
+    padding-top: 0;
 
- .we-do__container .we-do__title {
+    @include displaynone {
+        display: none;
+        }
+
+ 
+}
+
+.we-do__title {
      margin-bottom: 50px;
+     
 
- }
+}
 
+ .we-do__title {
+    // text-align: center;
+
+}
  .we-do__list {
      display: flex;
      gap: 30px;

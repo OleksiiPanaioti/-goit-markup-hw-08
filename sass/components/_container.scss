@@ -1,9 +1,36 @@
+// .container {
+//     margin: 0 auto;
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+
+
 .container {
-    margin: 0 auto;
-    width: 1200px;
+
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+
+    @include mobile {
+        max-width: 480px;
+    }
+
+    @include tablet {
+        max-width: 768px;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+    
+     
+    }
+
+    outline: 2px solid orange ;
 }
+
 
 .container-footer {
     display: flex;
@@ -12,4 +39,19 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 70px;
+
+    @include mobile {
+            width: 480px;
+        }
+
+        @include tablet {
+                }
+        
+         @include desktop {
+                }
 }
+
+
+
+
+
