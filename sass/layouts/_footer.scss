@@ -1,7 +1,53 @@
-.footer-main {
+.footer {
     background-color: var(--hero-bcg);
+
 }
 
+.adress-footer {
+    margin-bottom: 60px;
+}
+.footer__container{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    // outline: 2px solid orange;
+    // gap: 70px;
+
+    @include mobile {
+        min-width: 480px;
+    }
+
+    @include tablet {
+        min-width: 768px;
+    }
+
+    @include desktop {
+        min-width: 1200px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 60px;
+        
+    }
+}
+
+.adress-social__wrap {
+
+    @include tablet {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    @include desktop {
+        gap: 60px;
+        align-items: baseline;
+        text-align: left;
+    }
+}
 .footer-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -9,6 +55,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--white-text);
+
 
     &>span {
         color: var(--accent-color);
@@ -26,7 +73,7 @@
 }
 
 .address-google {
-    font-family: 'Roboto';
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -58,17 +105,54 @@
 }
 
 /* ---------- form footer main--------- */
-.form-field-footer-pos {
-    display: flex;
+.footer-form {
+ 
+    @include mobile {}
+    
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    @include desktop {}
+
 }
 
-.form-field-footer {
-    display: flex;
-    gap: 12px;
+
+.footer-form__form {
+
+
+    @include desktop {
+        text-align: left;
+    }
+
 }
 
-.form-input-footer {
-    width: 358px;
+.footer-form__field {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 12px;
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+
+    }
+        
+    @include tablet {
+        max-width: 450px;
+    }
+        
+    @include desktop {
+        max-width: 1200px;
+        gap: 12px;
+    }
+}
+
+.footer-form__input {
+
+    width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -86,10 +170,16 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-
+    @include mobile {}
+        
+    @include tablet {}
+        
+    @include desktop {
+        width: 358px;
+    }
 }
 
-.form-label-footer {
+.footer-form__label {
     display: inline-block;
     margin-bottom: 20px;
 
@@ -100,6 +190,11 @@
     text-transform: uppercase;
 
     color: var(--white-text);
+}
+
+
+.social-footer {
+    margin-bottom: 60px;
 }
 
 
@@ -122,13 +217,6 @@
      background-color: var(--accent-color);
 } 
     
-
-    
-
-
-
-
-
 
 .btn-wrap-footer {
     position: relative;

@@ -20,41 +20,41 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     gap: 30px;
- 
+    
+
 
 
     @include mobile {
    
-            }
+    }
         
     @include tablet {
    
-            }
+    }
         
     @include desktop {
-                @include centeredFlex;
+        @include centeredFlex;
 
-            }
+        }
 }
 
 .clients__item {
-
-
-    // width: calc((100% - 150px) / 6);
     height: 92px;
+    width: calc((100% - 30px * (2 - 1)) / 2);
+
+    
 
     @include mobile {
         @include calc(2);
     }
         
     @include tablet {
-                @include calc(3);
+        @include calc(3);
     }
         
     @include desktop {
-                @include calc(6);
+        @include calc(6);
     }
 
 }

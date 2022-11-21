@@ -2,8 +2,8 @@
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 30px;
+    justify-content: space-between;
+
     
     @include mobile {
 
@@ -22,15 +22,19 @@
  .advantages__item {
 
     &:not(:last-child) {
-         margin-bottom: 30px;
+        @media screen and (max-width:480px) {
+            margin-bottom: 30px;
+        }
+
     }
 
     @include mobile {
-
+   
     }
         
     @include tablet {
         @include calc(2);
+     
     }
          
     @include desktop {
@@ -43,10 +47,9 @@
 .advantages__thumb {
     display: flex;
     justify-content: center;
-
-    height: 120px;
-    width: 450px;
     align-items: center;
+    height: 120px;
+
 
     background-color: var(--grey-bcg);
     border-radius: 4px;
@@ -87,7 +90,7 @@
     }
         
     @include desktop {
-        text-align: left;
+
 
     }
 }
@@ -98,12 +101,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     
-
-    @include mobile {}
-    
-    @include tablet {}
-    
-    @include desktop {}
-
 }
 

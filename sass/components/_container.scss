@@ -8,48 +8,27 @@
 
 
 .container {
-
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 
     @include mobile {
-        max-width: 480px;
+        width: 480px;
     }
 
     @include tablet {
-        max-width: 768px;
+        width: 768px;
     }
 
     @include desktop {
-        max-width: 1200px;
+        width: 1200px;
     
-     
     }
 
-    outline: 2px solid orange ;
+    // outline: 2px solid orange ;
 }
 
 
-.container-footer {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 70px;
-
-    @include mobile {
-            width: 480px;
-        }
-
-        @include tablet {
-                }
-        
-         @include desktop {
-                }
-}
 
 
 
