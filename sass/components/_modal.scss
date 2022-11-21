@@ -19,9 +19,11 @@
 
 
 .modal {
-    height: 581px;
-    width: 528px;
-    background-color: var(--main-bcg);
+height: 609px;
+width: calc(100% - 30px);
+
+
+background-color: var(--main-bcg);
     padding: 40px;
 
     border-radius: 4px;
@@ -38,8 +40,22 @@
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
-    
+
     }
+
+    @include mobile {
+        width: 450px;
+    }
+
+    @include tablet {
+        width: 450px;
+    }
+    
+    @include desktop {
+        height: 581px;
+        width: 528px;
+    }
+    
 }
 
 
@@ -72,7 +88,7 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.50;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text);
@@ -80,6 +96,11 @@
     text-align: center;
 
     margin-bottom: 12px;
+
+    @include desktop {
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .input-modal {
@@ -180,31 +201,38 @@
 
 
 .modal-checkbox {
+    @include centeredFlex;
     margin-bottom: 30px;
 }
 
 .check-text {
-    @include centeredFlex;
 
+    display: flex;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
 
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
     color: var(--main-text);
+
+    & a {
+    
+        color: var(--accent-color);
+        text-decoration: underline;
+    
+    }
+
+    @include tablet {
+
+    }
+
+    @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+    }
 }
 
-.check-text>a {
-
-    color: var(--accent-color);
-    text-decoration: underline;
-
-    letter-spacing: 0.03em;
-    margin-left: 10px;
-
-
-}
 
 .check-text span {
     @include centeredFlex;
