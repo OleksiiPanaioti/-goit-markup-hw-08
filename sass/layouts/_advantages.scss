@@ -3,10 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 
     
+    @media (max-width:768px) {
+     
+    }
     @include mobile {
-
+    
     }
         
     @include tablet {

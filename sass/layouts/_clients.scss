@@ -11,10 +11,16 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-bottom: 30px;
     color: var(--secondary-text);
         
-    margin-bottom: 50px;
+    
+
+    @include desktop {
+            font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+        }
 }
 
 .clients__list {
